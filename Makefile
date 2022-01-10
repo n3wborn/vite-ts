@@ -16,7 +16,7 @@ dev:
 	docker run --rm -it --name vite-ts -u "node" \
 		-w /home/node/app \
 		-v $(CURDIR):/home/node/app \
-		-p 3003:3000 \
+		-p 3003:3003 \
 		n3wborn/vite-ts:latest \
 		yarn dev
 
@@ -25,6 +25,6 @@ build:
 	docker run --rm -it --name vite-ts -u "node" \
 		-w /home/node/app \
 		-v $(CURDIR):/home/node/app \
-		-p 3003:3000 \
+		-p 3003:3003 \
 		n3wborn/vite-ts:latest \
 		yarn build
